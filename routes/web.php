@@ -11,6 +11,23 @@
 |
 */
 
+/**
+ * display all tasks
+ */
 Route::get('/', function () {
-    return view('welcome');
+    //
+});
+
+/**
+ * add new task
+ */
+Route::post('/task', function(Request $request) {
+    //
+});
+
+/**
+ * delete an existing task
+ */
+Route::delete('/task/{id}', function($id) {
+    //
 });
