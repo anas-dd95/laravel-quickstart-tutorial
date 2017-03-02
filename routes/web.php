@@ -49,6 +49,8 @@ Route::post('/task', function(Request $request) {
 /**
  * delete an existing task
  */
-Route::delete('/task/{id}', function($id) {
-    //
+Route::delete('/task/{task}', function(Task $task) {
+    $task->delete();
+
+    return redirect('/');
 });
